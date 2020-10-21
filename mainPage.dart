@@ -921,17 +921,12 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
                                                 child: Container(
                                                   alignment: Alignment.center,
                                                   color: Colors.red,
-                                                  child: Text('ตกลง'),
+                                                  child: Text('submit'),
                                                 ),
                                                 onTap: () {
-                                                  // print('ตกลง');
-
-                                                  // print(textValueInput);
-                                                  // numData = int.parse(textValueInput);
                                                   setState(() {
-                                                    // inputValue(numData);
+                                                    print(submit);
                                                     test();
-                                                    // dialogSetValueHide = false;
                                                   });
                                                 },
                                               ),
@@ -943,12 +938,12 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
                                                   alignment: Alignment.center,
                                                   color: Colors.black,
                                                   child: Text(
-                                                    'ยกเลิก',
+                                                    'cancel',
                                                     style: TextStyle(color: Colors.white),
                                                   ),
                                                 ),
                                                 onTap: () {
-                                                  print('ยกเลิก');
+                                                  print('cancel');
                                                   setState(() {
                                                     // openclosehide = !openclosehide;
                                                     dialogSetValueHide = false;
